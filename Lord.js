@@ -1763,21 +1763,11 @@ Alasan : ${reason}`, [sender], true)
 									reply('Tidak Usah')
 									break
 						case 'join':case 'joingc':
-									if (!q) return reply('Linknya?')
-									if (!Ofc.key.fromMe && !isOwner) return reply(mess.only.owner)
-										if (!isUrl(args[0]) && !args[0].includes('https://chat.whatsapp.com/')) return reply('Linknya Invalid Lord')
-										reply('Tunggu Sebentar Otw Masuk Group')
-										link = args[0].replace('https://chat.whatsapp.com/','')
-										fak = Zeeone.query({ json: ['action', 'invite', link],
-										expect200: true })
-										reply('Berhasil Masuk Grup')
+									
 									break
 						case 'kick': case 'headsot':
-									if (!isGroup) return reply(mess.only.group)
-									if (!isGroupAdmins && !isOwner && !Ofc.key.fromMe) return reply(mess.only.admin) 
-									if (!isBotGroupAdmins) return reply(`Jadikan Bot Sebagai Admin Group!`)
-									kick(from, mentionUser)
-									break
+									
+								        break
 						case 'revoke': case 'resetlinkgc': case 'resetlink':
 									if (!isGroup) return reply(mess.only.group)
 									if (!isGroupAdmins && !isOwner && !Ofc.key.fromMe) return reply(mess.only.admin) 
@@ -1799,32 +1789,7 @@ Alasan : ${reason}`, [sender], true)
 									jpegThumbnail: thumbnail}, 'extendedTextMessage', { detectLinks: false, contextInfo: {mentionedJid: [yeh]}, quoted: Ofc})
 									break
 						case 'add':
-									try {
-										if (!isGroup) return reply(mess.only.group)
-										if (!isGroupAdmins && !isOwner && !Ofc.key.fromMe) return reply(mess.only.admin)  
-										if (!isBotGroupAdmins) return reply(`Jadikan Bot Sebagai Admin Group!`)
-										if (Ofc.message.extendedTextMessage === null || Ofc.message.extendedTextMessage === undefined) {
-											entah = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
-											response = await Zeeone.groupAdd(from, [entah])
-											o = response.participants[0]
-											let inv = (Object.values(o))
-											if(inv[0].code == 409) return reply('Target Sudah Di Didalam Group!')
-											if(inv[0].code == 403) return reply('Eror, user private acc')
-											if(inv[0].code == 408) return reply('Eror, user baru saja keluar')
-											if(inv[0].code == 401) return reply('Eror, Karena Bot Di Block Oleh Target')
-												} else {
-													entah = Ofc.message.extendedTextMessage.contextInfo.participant
-													response = await Zeeone.groupAdd(from, [entah])
-													o = response.participants[0]
-													let inv = (Object.values(o))
-													if(inv[0].code == 409) return reply('Target Sudah Di Didalam Group!')
-													if(inv[0].code == 403) return reply('Gagal, Karena Di Private')
-													if(inv[0].code == 408) return reply('Gagal, Karena Target Baru² Saja Keluar')
-													if(inv[0].code == 401) return reply('Gagal, Karena Bot Di Block Oleh Target')
-												}
-											} catch {
-												return 
-											}
+									
 									break
 						case 'setthumb': case 'setthum':
 									if (!isOwner && !Ofc.key.fromMe) return reply(mess.only.owner)
