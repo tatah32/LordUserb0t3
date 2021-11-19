@@ -109,7 +109,7 @@ let antitrol = true
 
 let hit_today = []
 let blocked = []
-let limitawal = "2000" 
+let limitawal = "20" 
 let namabot = setting.botname
 let owner_name = setting.ownername
 let owner_number = setting.ownerNumber
