@@ -443,7 +443,7 @@ var waktoo = date.getHours();
 					limit: 'Limit kamu habis lord , Silahkan beli dengan #buylimit <nominal> atau minta gift dari user lain',
 					sewabot: ` 「 *SEWA BOT* 」 \n\nBerikut list sewa bot kami
 
-•> 25k / BULAN (PREMIUM)
+•> Free / BULAN (PREMIUM)
 Isi sendiri
 
 Minat? Pm wa.me/${owner_number}`,
@@ -1760,7 +1760,7 @@ Alasan : ${reason}`, [sender], true)
 										sendButLocation(from, sewabotkak(), `Sewa bot om?`,  thumbnail, gakloo,{})
 										break
 						case 'donasi':
-									reply('Isi sendiri')
+									reply('Tidak Usah')
 									break
 						case 'join':case 'joingc':
 									if (!q) return reply('Linknya?')
