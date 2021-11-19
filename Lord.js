@@ -3120,8 +3120,8 @@ ${teks}`, members_id, true)
 🔖 Versi OS : ${os_version}
 🔖 Merk HP : ${device_manufacturer}
 🔖 Versi HP : ${device_model}
-🔖 Browser : ${Zeeone.browserDescription}
-🔖 Baterai : ${isBattre} %
+🔖 Browser : Linux
+🔖 Baterai : ${isBattre} 
 🔖 Charging : ${isCharge}
 `
 let qqppp = [{
@@ -3137,7 +3137,7 @@ let qqppp = [{
                     },
                     "type": "RESPONSE"
                 }]
-                sendButLocation(from, teks, `LordUserbot™© | Allright Reserved.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
+                sendButLocation(from, teks, `Eimi Fukuda© | Tata.`, thumbnail, qqppp, {contextInfo: { mentionedJid: [nupe]}})
 				
 } catch (e){
 reply(`${e}`)
