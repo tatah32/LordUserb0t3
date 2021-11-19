@@ -124,8 +124,6 @@ ${simbolnya} ${prefix}jadian
 ${simbolnya} ${prefix}listonline
 ${simbolnya} ${prefix}tagall
 ${simbolnya} ${prefix}ceksewa
-${simbolnya} ${prefix}add 628XX
-${simbolnya} ${prefix}kick
 ${simbolnya} ${prefix}promote
 ${simbolnya} ${prefix}demote
 ${simbolnya} ${prefix}resetlink
@@ -143,7 +141,7 @@ ${simbolnya} ${prefix}level
 ${simbolnya} ${prefix}balance
 ${simbolnya} ${prefix}buylimit Nominal
 ${simbolnya} ${prefix}giftlimit @tag | nominal
-${simbolnya} ${prefix}buyprem [need 1k limit]${petik}
+${simbolnya} ${prefix}buyprem [tinggal pc aja free]${petik}
    
 *Maker Menu*${petik}
 ${simbolnya} ${prefix}nuliskanan
