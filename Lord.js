@@ -1492,7 +1492,7 @@ Pastikan Transfer Limit Benar`)
 									break 
 						case 'buyprem': case 'beliprem':
 									if (isPremium) return reply('Loe Dah Prem Cuy')
-									if (getLimit(sender, limitawal, limit) < 1000) return reply(`Limitmu Tidak Cukup.\nDi Perlukan 1000 Limit Untuk Menjadi User Premium Trial 3 Hari`)
+									if (getLimit(sender, limitawal, limit) < 1000) return reply(`Limitmu Tidak Cukup.\nDi Perlukan 10 Limit Untuk Menjadi User Premium Trial 3 Hari`)
 									premium.addPremiumUser(`${sender}`, `3d`, premium)
 									sendButMessage(from, `*Sekarang Akun Anda Telah Premium*`, `Klik Untuk Mengecek Waktu Expired`, [
 									{
@@ -1502,13 +1502,13 @@ Pastikan Transfer Limit Benar`)
 											},
 											type: 1,
 											}]);
-									beliprem(sender, 1000)
+									beliprem(sender, 10)
 									break
 						case 'buylimit':{
-									if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $100 balance`)
+									if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $10 balance`)
 									if (q.includes('-')) return reply(`Jangan menggunakan -`)
 									if (isNaN(q)) return reply(`Harus berupa angka`)
-									let ane = Number(nebal(q) * 100)
+									let ane = Number(nebal(q) * 10)
 									if (getBalance(sender, balance) < ane) return reply(`Balance kamu tidak mencukupi untuk pembelian ini`)
 									kurangBalance(sender, ane, balance)
 									giveLimit(sender, nebal(q), limit)
