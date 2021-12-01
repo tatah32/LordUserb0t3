@@ -1,8 +1,8 @@
 {
     "self_mode": false,
-    "anti_delete": true,
+    "anti_delete": false,
     "anti_call": false,
-    "autorespon": true,
+    "autorespon": false,
     "user_register": false,
 	"prefix": ".",
 	"ownerNumber": "6289668014332",
